@@ -11,6 +11,7 @@ def on_forever():
     radio.send_number(input.acceleration(Dimension.Y))
     radio.send_number(input.acceleration(Dimension.X))
     radio.send_string(str(compass))
+    basic.show_string(str(compass))
 basic.forever(on_forever)
 
 
