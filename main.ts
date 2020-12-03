@@ -9,5 +9,4 @@ basic.forever(function on_forever() {
     radio.sendValue("X", input.acceleration(Dimension.X))
     let compass = input.compassHeading()
     radio.sendString("" + compass)
-    basic.showString("" + compass)
 })
