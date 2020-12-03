@@ -10,7 +10,7 @@ def on_forever():
     radio.send_value("Y", input.acceleration(Dimension.Y))
     radio.send_value("X", input.acceleration(Dimension.X))
     compass = input.compass_heading()
-    radio.send_string(str(compass))
+    radio.send_value("Compass",compass)
 basic.forever(on_forever)
 
 
