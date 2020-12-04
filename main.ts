@@ -11,4 +11,5 @@ basic.forever(function on_forever() {
     radio.sendValue("X", input.acceleration(Dimension.X))
     compass = input.compassHeading()
     radio.sendValue("Compass", compass)
+    basic.pause(20)
 })
